@@ -1,0 +1,537 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+.masthead header{
+	position: relative;
+	z-index:300;
+	width: 50%;
+    display: block;
+    float: left;
+    margin-top: 70px;
+
+}
+
+.masthead p {
+    font-size: 2.2em;
+    line-height: 42px;
+    max-width: 380px;
+}
+	
+	
+.planes_ctnr{
+	position: relative;	
+	width: 850px;
+    height: 850px;
+	left: -170px;
+    margin-top: -80px;
+
+	}	
+
+	.guy{
+		position: absolute;
+	}
+	
+.planes {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 850px;
+    height: 850px;
+    margin:0;
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+	mix-blend-mode: multiply;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }	
+	
+	
+.og_sec{
+    max-width: 1600px;
+    margin: 0 auto;
+    float: none;
+	position:relative;
+    overflow:hidden
+}
+	
+	
+.sec_left, .sec_right{
+    height: 700px;
+	width:50%;
+	float:left;
+	background-size: cover;
+background-position: 50%;
+position: relative;
+}			
+	
+
+.og_sec .illustration{
+    background-image:url("../images/illustration_sec_color.jpg");
+    background-repeat:no-repeat;
+
+}
+
+.og_sec .sk8{
+    background-image:url("../images/sk8_sec_color.jpg");
+	background-repeat:no-repeat;
+}
+
+.og_sec .build{
+    background-image:url("../images/webdev_sec_color.jpg");
+	background-repeat:no-repeat;
+
+}
+	
+.og_sec .blog{
+    background-image:url("../images/explore_sec_color.jpg");
+    background-repeat:no-repeat; 
+	
+}
+
+
+.og_sec .ill{
+    -webkit-filter: grayscale(100%) brightness(120%);
+	filter: grayscale(100%) brightness(120%); 
+	
+}
+
+
+.sec_left, .sec_right{
+    -webkit-filter: grayscale(100%) brightness(120%);
+	filter: grayscale(100%) brightness(120%); 
+	
+}
+
+.ill{
+	overflow:hidden;
+}	
+	
+h4 {
+    font-family: abril fatface,georgia,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6em;
+    line-height: 75px;
+}
+	
+.contact{
+    padding:40px 0 60px
+}
+.contact h4{
+    margin-bottom:15px
+}
+.contact h4 a{
+    color:#2c2c2c
+}
+.contact h4 a:hover{
+    color:rgba(44,44,44,.5)
+}	
+	
+p {
+    font-size: 2.2em;
+    line-height: 42px;
+}	
+
+	
+	
+	
+@media only screen and (max-width:1100px){
+	.planes_ctnr {
+    position: relative;
+	width: 100px;
+	height: 160px;
+	left: 40px;
+	margin-top: 214px;
+	display: block;
+	}	
+	
+	.guy {
+	position: absolute;
+	width: 300px;
+	height: auto;
+	top: 210px;
+	}
+	
+	.planes {
+	position: absolute;
+	top: 215px;
+	left: 0px;
+	width: 300px;
+	height: 300px;
+	}
+	
+	.masthead {
+	margin-bottom: 10px;
+	}
+	
+}	
+	
+@media only screen and (min-width:814px){
+
+.sec_left:hover, .sec_right:hover{
+	-webkit-filter: grayscale(0%) brightness(100%); 
+	filter: grayscale(0%) brightness(100%); 
+}
+
+}
+	
+	
+@media only screen and (max-width:699px){
+	.planes_ctnr {
+    width: 100%;
+    height: auto;
+    left: 238px;
+    margin-top: 10px;
+    top: -290px;
+	}	
+		
+	.guy {
+    width: 50%;
+	top:0;
+}	
+	
+.planes {
+    top: 5px;
+    left: 0;
+    width: 50%;
+    height: auto;
+    margin: 0;
+}	
+	
+	.masthead p {
+		margin-top: -25px;
+	}	
+	
+}	
+
+	
+@media only screen and (max-width: 425px){
+	.planes_ctnr {
+		width: 100%;
+		height: auto;
+		left: 138px;
+		margin-top: 10px;
+		top: -300px;
+	}	
+	
+	.guy, .planes {
+    width: 70%;
+	}
+	.masthead p {
+		margin-top: -55px;
+	}	
+	
+}
+	
+	
+	
+/*  ##### pulled from stylesheets ##### */
+body {
+    font-family: source sans pro,arial,sans-serif;
+    font-weight: 300;
+    font-size: 62.5%;
+    color: #2c2c2c;
+    transition: background-color .8s ease;
+}	
+	
+section {
+    width: 100%;
+    float: left;
+    clear: both;
+}
+	
+.wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 10%;
+}	
+	
+.masthead header .ident {
+    text-indent: -9999px;
+    display: block;
+    background-image: url(../images/design-craete-explore.png);
+    background-size: 240px 240px;
+    width: 240px;
+    height: 240px;
+}
+
+.jake-head {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -225px;
+    left: 22px;
+    background-size: contain;
+    background-image: url(../images/jake_head_sml.png);
+    mix-blend-mode: multiply;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}	
+	
+.masthead h1 {
+    margin: 20px 0 0;
+    width: 44%;
+    max-width: 400px;
+    float: right;
+    clear: none;
+}	
+	
+	
+	
+
+@media only screen (max-width:1100px){	
+	.masthead header .ident {
+	background-size: 190px 190px;
+    width: 190px;
+    height: 190px;
+	}	
+	
+}	
+	
+@media only screen (max-width:425px){	
+	.masthead header .ident {
+	background-size: 140px 140px;
+    width: 140px;
+    height: 140px;
+	}	
+	
+}
+
+/*  ##### end pulled from stylesheets ##### */	
+
+/* ##### KEYFRAMES ####  */	
+	
+@-webkit-keyframes bottom-to-top{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+@-moz-keyframes bottom-to-top{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+@-o-keyframes bottom-to-top{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+@keyframes bottom-to-top{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}	
+	
+/* ##### END KEYFRAMES ####  */		
+	
+/* ##### ANNIMATIONS ####  */
+	.in-view.masthead h1{
+    -webkit-animation-delay:.4s;
+    -webkit-animation-duration:1s;
+    -webkit-animation-name:bottom-to-top;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-timing-function:cubic-bezier(0.215,0.61,0.355,1);
+    -moz-animation-delay:.4s;
+    -moz-animation-duration:1s;
+    -moz-animation-name:bottom-to-top;
+    -moz-animation-fill-mode:forwards;
+    -moz-animation-timing-function:cubic-bezier(0.215,0.61,0.355,1);
+    -o-animation-delay:.4s;
+    -o-animation-duration:1s;
+    -o-animation-name:bottom-to-top;
+    -o-animation-fill-mode:forwards;
+    -o-animation-timing-function:cubic-bezier(0.215,0.61,0.355,1);
+    animation-delay:.4s;
+    animation-duration:1s;
+    animation-name:bottom-to-top;
+    animation-fill-mode:forwards;
+    animation-timing-function:cubic-bezier(0.215,0.61,0.355,1);
+    opacity:0
+}
+	
+
+/* ##### END ANNIMATIONS ####  */	
+	
+</style>
+	
+	</head>
+
+<body>
+	
+<section class="masthead">
+  <div class="wrap">
+    <header>
+     <div class="ident">Lucid Projects</div>
+      <a href="/"><div class="jake-head">
+     </div></a>
+	 <p><strong>JakeSherwood.com</strong>. Here's a small glimpse into my world.  draw, design, build, skate, explore.  </p> 	
+    </header>
+    <h1><div class="planes_ctnr">	
+		<img src="images/planes_guy.png" class="guy" alt="">
+		<img src="images/planes.png" class="planes" alt="">
+	</div></h1>
+    
+  </div>
+</section>	
+	
+<section class="og_sec">
+  
+  <a href="illustration.html"><div class="sec_left illustration"><div class="reveal"></div></div></a>
+	<a href="feed.html"><div class="sec_right blog"><div class="reveal"></div></div></a>
+</section>
+<section class="og_sec">
+ 
+	<a href="webdev.html"> <div class="sec_left build"><div class="reveal"></div></div></a>
+	<a href="sk8.html"> <div class="sec_right sk8"><div class="reveal"></div></div></a>
+
+</section>	
+	
+<section class="contact">
+  <div class="wrap">
+    <h4><span class="l1"><span><span class="maily">contact [at] jakesherwood [dot] com</span></span></span></h4>
+    <p class="l3"><span>contact me if you'd like to work together</span></p>
+    
+  </div>
+</section>
+<!--/contact-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+	function revealNoreveal() {
+   		 if ($(window).width() < 814) {
+			 $('.reveal').attr('class', 'noReveal');
+			 console.log("mobile size");
+		 } else {
+			 $('.noReveal').attr('class', 'reveal');
+			 console.log("deslktop size");
+		 }
+	
+	}	
+		
+	$(document).ready(function() {
+		console.log("i ran");
+	$("body").removeClass("preload");
+    var $animation_elements = $('.masthead, .og_sec, .owl-bios .mf, .owl-bios .owl-pics, .owl-bios .ac, .brand, .industry, .contact');
+    var $mobile_elements = $('.masthead, .contact');
+   
+		
+	  
+	var $window = $(window);
+    
+		
+	function check_if_in_view() {
+        var window_height = $window.height();
+        var window_top_position = $window.scrollTop();
+        var window_bottom_position = (window_top_position + window_height);
+        
+		 if ($(window).width() > 814){
+		$.each($animation_elements, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+                $element.addClass('in-view');
+            } else {
+                $element.removeClass('in-view');
+            }
+			console.log("desktop size - in view");
+        });
+		} else {
+			$.each($mobile_elements, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+                $element.addClass('in-view');
+            } else {
+                $element.removeClass('in-view');
+            }
+        });
+			console.log("mobile size - inview");
+		}
+		
+		
+    }
+    $window.on('scroll resize', check_if_in_view);
+//	
+		$(".maily").each(function() {
+			var ats,
+				dots,
+				address,
+				i;
+			ats = [' at ', ' (at) ', ' [at] '];
+			dots = [' dot ', ' (dot) ', ' [dot] '];
+			address = $(this).html();
+			for (i = 0; i < ats.length; i++) {
+				address = address.replace(ats[i], '@');
+			}
+			for (i = 0; i < dots.length; i++) {
+				address = address.replace(dots[i], '.');
+			}
+			$(this).html('<a href="mailto:' + address + '">' + address + '</a>');
+		 });
+		
+		function maily_in_view(){
+		if ($('.contact').hasClass('in-view')){
+			$('.l1').css('transform','none');
+		}else {
+			console.log('maily not in-view');
+		}
+	}	
+		
+		
+	$(window).resize(function(){
+			//ordbtnResize();
+			revealNoreveal();
+			maily_in_view();
+			//hsbTextboxResize();
+		
+		});
+	
+	$(window).scroll(function(){
+		maily_in_view();
+	});
+	
+	maily_in_view()		
+	revealNoreveal();
+		
+		
+		
+	});
+	
+	
+	
+	</script>	
+	
+</body>
+</html>

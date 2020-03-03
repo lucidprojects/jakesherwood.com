@@ -1,0 +1,62 @@
+/* p5 css */
+
+canvas {
+  display: block;
+}
+
+
+/*end p5 css*/
+
+
+
+
+.whatisclimatescap {
+-ms-flex: 0 0 87.67% !important;
+flex: 0 0 87.67% !important;
+max-width:  87.67% !important;
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.rcp_sec{background:linear-gradient(to bottom,rgba(22,22,22,.3) 0,rgba(22,22,22,.7) 75%,#161616 100%),url("../img/sunrise_wide.jpg");background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+
+.section_spacer{
+	margin-top: 3rem!important;
+	
+}
+
+
+.rcp8_outer{
+	margin-top: 3rem!important;
+	margin-bottom: 0 !important;
+}
+
+
+
+.rcp8{
+padding: 0 2em 0 0 !important;
+border-right: .5rem solid #ff0000;
+border-left: none !important;
+}
+
+@media and (max-width:480px){
+
+h1.mx-auto.my-0.text-uppercase {
+    font-size: 6vw !important;
+}
+
+
+}

@@ -1,0 +1,296 @@
+@-webkit-keyframes bottom-to-top{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+@-moz-keyframes bottom-to-top{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+@-o-keyframes bottom-to-top{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+@keyframes bottom-to-top{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+
+@-webkit-keyframes rotate-in{
+    0%{
+        opacity:0;
+        transform:rotate(-90deg)
+    }
+    100%{
+        opacity:1;
+        transform:rotate(10deg)
+    }
+}
+@-moz-keyframes rotate-in{
+    0%{
+        opacity:0;
+        transform:rotate(-90deg)
+    }
+    100%{
+        opacity:1;
+        transform:rotate(10deg)
+    }
+}
+@-o-keyframes rotate-in{
+    0%{
+        opacity:0;
+        transform:rotate(-90deg)
+    }
+    100%{
+        opacity:1;
+        transform:rotate(10deg)
+    }
+}
+@keyframes rotate-in{
+    0%{
+        opacity:0;
+        transform:rotate(-90deg)
+    }
+    100%{
+        opacity:1;
+        transform:rotate(10deg)
+    }
+}
+
+@-webkit-keyframes reveal-up{
+    0%{
+        height:100%
+    }
+    100%{
+        height:0
+    }
+}
+@-moz-keyframes reveal-up{
+    0%{
+        height:100%
+    }
+    100%{
+        height:0
+    }
+}
+@-o-keyframes reveal-up{
+    0%{
+        height:100%
+    }
+    100%{
+        height:0
+    }
+}
+@keyframes reveal-up{
+    0%{
+        height:100%
+    }
+    100%{
+        height:0
+    }
+}
+@-webkit-keyframes wipe-up{
+    0%{
+        transform:translateY(100%)
+    }
+    100%{
+        transform:translateY(0)
+    }
+}
+@-moz-keyframes wipe-up{
+    0%{
+        transform:translateY(100%)
+    }
+    100%{
+        transform:translateY(0)
+    }
+}
+@-o-keyframes wipe-up{
+    0%{
+        transform:translateY(100%)
+    }
+    100%{
+        transform:translateY(0)
+    }
+}
+@keyframes wipe-up{
+    0%{
+        transform:translateY(100%)
+    }
+    100%{
+        transform:translateY(0)
+    }
+}
+@-webkit-keyframes wipe-up-in{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+@-moz-keyframes wipe-up-in{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+@-o-keyframes wipe-up-in{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+@keyframes wipe-up-in{
+    0%{
+        opacity:0;
+        transform:translateY(100%)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+@-webkit-keyframes fade-in{
+    0%{
+        opacity:0
+    }
+    100%{
+        opacity:1
+    }
+}
+@-moz-keyframes fade-in{
+    0%{
+        opacity:0
+    }
+    100%{
+        opacity:1
+    }
+}
+@-o-keyframes fade-in{
+    0%{
+        opacity:0
+    }
+    100%{
+        opacity:1
+    }
+}
+@keyframes fade-in{
+    0%{
+        opacity:0
+    }
+    100%{
+        opacity:1
+    }
+}
+h1{
+    font-size:5em;
+    line-height:64px
+}
+
+h3{
+    font-size: 2.5em;
+
+}
+
+.archive-item h4{
+    font-family: inherit;
+    font-size:1.8em;
+}
+
+h2,h3,h4{
+   /* font-size:4em;*/
+    line-height:22px
+}
+p,li{
+    font-size:1.8em;
+    line-height:33px
+}
+
+
+.jake-head {
+    width: 150px;
+    height: 150px;
+    top: -174px;
+    left: 22px;
+    background-size: contain;
+}
+
+.masthead{
+    margin-bottom:-10px
+}
+.masthead h1{
+    width:44%;
+    max-width:400px;
+    float:right;
+    margin:-360px 0 0;
+    clear:none
+}
+.masthead p{
+    width:44%;
+    max-width:400px;
+    float:left;
+    clear:left
+}
+.masthead header{
+    margin:70px 0 -80px;
+    float:left;
+	z-index: 300;
+}
+.masthead header .ident{
+    background-size:190px 190px;
+    width:190px;
+    height:190px
+}
+.og_sec .ac,.og_sec .mf{
+    width:50%;
+    height:450px;
+    float:left
+}
+.og_sec .ac{
+    display:inherit
+}
+
+.contact{
+    padding:70px 0
+}
+.contact h4{
+    margin-bottom:20px
+}
+.contact p{
+    width:75%;
+    max-width:770px
+}

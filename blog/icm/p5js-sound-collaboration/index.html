@@ -1,0 +1,917 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127854682-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127854682-1');
+</script>
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101159742);</script>
+<script async src="//static.getclicky.com/js"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<title>P5js Sound Collaboration</title>
+<link rel="stylesheet" href="
+  /blog/
+/assets/css/styles.css"> <!-- this is blog style sheet -->
+<link type="application/atom+xml" rel="alternate" href="https://jakesherwood.com/blog/feed.xml" title="jakesherwood.com" />
+<!-- Begin Jekyll SEO tag v2.5.3 -->
+<title>P5js Sound Collaboration - jakesherwood.com</title>
+<meta property="og:title" content="P5js Sound Collaboration" />
+<meta name="description" content="Exploring music collaboration with p5jsExploring music collaboration with p5js" />
+<meta property='og:description' content="Exploring music collaboration with p5jsExploring music collaboration with p5js" />
+<link rel="canonical" href="https://jakesherwood.com/blog/icm/p5js-sound-collaboration/" />
+<meta property='og:url' content='https://jakesherwood.com/blog/icm/p5js-sound-collaboration/' />
+<meta property="og:site_name" content="jakesherwood.com" />
+<script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "WebSite",
+      "name" : "jakesherwood.com",
+      "url" : "https://jakesherwood.com/blog"
+    }
+  </script>
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-11-20T00:00:00-05:00" />
+<link rel="next" href="https://jakesherwood.com/blog/pcomp/pcomp-final-progress/" title="Pcomp Final Progress" />
+<link rel="prev" href="https://jakesherwood.com/blog/pcomp/pcomp-final-concept/" title="Pcomp Final Concept" />
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "P5js Sound Collaboration",
+      "image": null,
+      "datePublished": "2019-11-20T00:00:00-05:00",
+      "description": "Exploring music collaboration with p5jsExploring music collaboration with p5js"
+    }
+  </script>
+<!-- End Jekyll SEO tag -->
+
+<meta name="description" content="creative interpretation and creation as seen through my mind" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<link rel="stylesheet" href="https://jakesherwood.com/scss/mobile_full_test_new.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="https://jakesherwood.com/scss/tablet_full.css" media="only screen and (min-width:700px)" type="text/css" />
+<link rel="stylesheet" href="https://jakesherwood.com/scss/desktop_full.css" media="only screen and (min-width:1100px)" type="text/css" />
+<link rel="stylesheet" href="https://jakesherwood.com/css/slideoutjs.css" type="text/css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" />
+
+<link rel="stylesheet" type="text/css" href="https://jakesherwood.com/css/jquery.fancybox.min.css">
+<style type="text/css">
+.masthead header{
+	position: relative;
+	z-index:300;
+}
+
+
+	.full_width{
+		/*display: inline-block;
+		max-width: 1600px;
+		margin: auto;
+		float: none;*/
+		text-align: center;
+
+	}
+
+
+/* ##### ADDED FOR SMALL HEADER ####### */
+
+
+.masthead header .ident {
+background-size: 90px 90px;
+width: 90px;
+height: 90px;
+}
+
+.title{
+position: relative;
+margin: -147px 0;
+left: 115px;
+width: 100% !important;
+	}
+
+p.title {
+  line-height:22px;
+}
+
+
+	/* h1{
+		display: none;
+	} */
+
+.masthead p {
+max-width: 100% !important;
+}
+
+.jake-head {
+display: block;
+width: 75px;
+height: 75px;
+position: relative;
+top: -85px;
+left: 10px;
+}
+
+
+.masthead {
+margin-bottom: -10px !important;
+}
+
+li{
+  list-style: none;
+}
+
+
+h5 {
+font-size: 35px;
+}
+
+	@media only screen and (max-width:1100px){
+		.masthead header .ident {
+			position: relative;
+			top: -34px;
+		}
+
+		.jake-head {
+			top: -118px;
+		}
+
+		.title {
+   			margin: -98px 0;
+		}
+
+		.widediv_txt {
+			top: 40% !important;
+		}
+
+	}
+
+
+	@media only screen and (max-width: 895px){
+		.title {
+			margin: -103px 0;
+			width: 90% !important;
+		}
+	}
+
+
+	@media only screen and (max-width: 768px){
+			.widediv_txt {
+			top: 40% !important;
+		}
+
+	}
+
+	@media only screen and (max-width: 700px){
+		.wrap {
+			/* padding: 0 5%; */
+		}
+
+		.masthead header {
+	    margin: 68px 12% 5px 0;
+		}
+
+		.title {
+			top: -166px;
+    		width: 81% !important;
+		}
+
+		.widediv_txt, .kfdtext {
+			top: 50% !important;
+		}
+	}
+
+	@media only screen and (max-width: 425px){
+		.masthead p {
+			margin-top: -40px !important;
+		}
+	}
+
+
+	@media only screen and (max-width: 363px){
+		.title {
+			top: -166px;
+			width: 75% !important;
+		}
+	}
+/* ##### END ADDED FOR SMALL HEADER ####### */
+
+
+	@media only screen and (max-width:1600px){
+		.img_1600{
+		width:100%;
+	}
+	}
+
+
+	@media only screen and (max-width:1175px){
+			.kfdtext, .kfdtext{
+				top: 40%;
+			}
+
+	}
+
+
+
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+	  .widediv_txt {
+			top: 90% !important;
+
+		}
+
+}
+
+
+
+
+@media only screen and (max-width:699px){
+	.masthead p {
+		margin-top: -25px;
+	}
+
+
+	.widediv_txt {
+			top: 35% !important;
+		}
+
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+	  .widediv_txt {
+			top: 90% !important;
+		 	}
+
+}
+
+@media only screen and (max-width: 425px){
+	.masthead p {
+		margin-top: -55px;
+	}
+
+	.widediv_txt{
+			top: 42% !important;
+	}
+
+
+}
+</style>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="https://jakesherwood.com/scss/tablet.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="https://jakesherwood.com/scss/desktop.css" media="screen" type="text/css" />
+<![endif]-->
+
+<meta property="og:type" content="website" />
+
+</head>
+
+<body>
+<nav id="menu" class="menu">
+  <header>
+    <ul class="menu-section-list">
+    <li><a href="https://jakesherwood.com/">Home</a></li>
+    <li><a href="https://jakesherwood.com/illustration.html">Illustration</a></li>
+    <li><a href="https://jakesherwood.com/feed.html">Explore</a></li>
+  	<li><a href="https://jakesherwood.com/webdev.html">Web/Dev</a></li>
+  	<li><a href="https://jakesherwood.com/sk8.html">Skate</a></li>
+  	<li><a href="/blog/">Blog</a></li>
+  	</ul>
+  </header>
+</nav>
+
+<main id="panel">
+	<button class="toggle-button btn-hamburger"><!--☰--></button>
+<section class="masthead">
+  <div class="wrap">
+    <header>
+     <div class="ident">Lucid Projects</div>
+      <a href="/blog/"><div class="jake-head">
+        <!--<span class="jake-head"></span>
+        <span class="owl-wink"></span>-->
+	 </div></a>
+    </header>
+    <!-- <h1><div class="planes_ctnr">
+		<img src="https://jakesherwood.com/images/planes_guy.png" class="guy" alt="">
+		<img src="https://jakesherwood.com/images/planes.png" class="planes" alt="">
+	</div></h1> -->
+     <p class="title"><strong>Blog</strong> - Day to day mumblings...<br> P5js Sound Collaboration </p>
+
+  </div>
+</section>
+<!--/masthead-->
+
+<section class="content">
+  <div class="wrap blogcontent">
+    <!-- <nav>
+  
+    <a href="/" > Home</a>
+  
+    <a href="/about.html" > About</a>
+  
+    <a href="/blog.html" > Blog</a>
+  
+    <a href="/staff.html" > Staff</a>
+  
+
+</nav>
+
+
+<!--  <a href="/" >Home</a>
+  <a href="/about.html" >About</a> -->
+ <!-- -->
+    <h1>P5js Sound Collaboration</h1>
+<!-- <p>20 Nov 2019 - jake</p> -->
+
+<p>
+  20 Nov 2019
+  
+  
+    - <a href="/blog/authors/jake.html"> Jake Sherwood</a>
+  
+<p>
+
+  <p><img src="https://jakesherwood.com/blog/assets/images/icm_sound_hdr.jpg" class="post_img" alt="Exploring music collaboration with p5js" />
+<span class="imgsub">Exploring music collaboration with p5js</span></p>
+
+<p><strong>Exploring music collaboration with p5js</strong><!--more--></p>
+
+<!-- 
+<a href="#canvas" class="link">**Canvas of final work at bottom**</a>
+ -->
+
+<p>The assignment was to manipulate sound with p5js with a partner and present to the class.</p>
+
+<p>I thought it would be cool to figure out a way to collaborate live with my partner for our presentation.</p>
+
+<p>This meant I needed to figure out how to get 2 sketches to talk to each other.</p>
+
+<p>Following Dan Shiffmans’s tutorial <a href="https://www.youtube.com/watch?v=bjULmG8fqc8" target="_blank">here</a> I was able to get a node.js server set up and have two instances of a p5 sketch talk to each other over a local network.</p>
+
+<p>This allowed Na and I to collaboratively sample audio tracks and manipulate them in realtime.</p>
+
+<p>I have a serve_sound.js file that acts as my node server.</p>
+
+<p>It is listening from transmitions from one instance of the sketch and stores them to a local directory.  It then notifies the other instance that there is a new sample available.</p>
+
+<p>server_sound.js code:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">);</span> <span class="c1">//make express available</span>
+<span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span> <span class="c1">//invoke express</span>
+<span class="kr">const</span> <span class="nx">multer</span>  <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;multer&#39;</span><span class="p">)</span> <span class="c1">//use multer to upload blob data</span>
+<span class="kr">const</span> <span class="nx">upload</span> <span class="o">=</span> <span class="nx">multer</span><span class="p">();</span> <span class="c1">// set multer to be the upload variable (just like express, see above ( include it, then use it/set it up))</span>
+<span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span> <span class="c1">//use the file system so we can save files</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span><span class="s1">&#39;public&#39;</span><span class="p">));</span>
+
+
+
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s1">&#39;/upload&#39;</span><span class="p">,</span> <span class="nx">upload</span><span class="p">.</span><span class="nx">single</span><span class="p">(</span><span class="s1">&#39;soundBlob&#39;</span><span class="p">),</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">file</span><span class="p">);</span> <span class="c1">// see what got uploaded</span>
+
+  <span class="kd">let</span> <span class="nx">uploadLocation</span> <span class="o">=</span> <span class="nx">__dirname</span> <span class="o">+</span> <span class="s1">&#39;/public/uploads/&#39;</span> <span class="o">+</span> <span class="nx">req</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">originalname</span> <span class="c1">// where to save the file to. make sure the incoming name has a .wav extension</span>
+
+  <span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="nx">uploadLocation</span><span class="p">,</span> <span class="nx">Buffer</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="k">new</span> <span class="nx">Uint8Array</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">buffer</span><span class="p">)));</span> <span class="c1">// write the blob to the server as a file</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">sendStatus</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span> <span class="c1">//send back that everything went ok</span>
+
+<span class="p">})</span>
+
+
+
+<span class="c1">//makes the app listen for requests on port 3000</span>
+<span class="kd">let</span> <span class="nx">server</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;app listening on port 3000!&quot;</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;my socket server is running&quot;</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">socket</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;socket.io&#39;</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">io</span> <span class="o">=</span> <span class="nx">socket</span><span class="p">(</span><span class="nx">server</span><span class="p">);</span>
+
+<span class="nx">io</span><span class="p">.</span><span class="nx">sockets</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;connection&#39;</span><span class="p">,</span> <span class="nx">newConnection</span><span class="p">);</span>
+
+
+<span class="kd">function</span> <span class="nx">newConnection</span><span class="p">(</span><span class="nx">socket</span><span class="p">){</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;new connection&#39;</span> <span class="o">+</span> <span class="nx">socket</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span>
+	<span class="c1">//console.log(socket.id);</span>
+	
+	<span class="c1">//socket.on(&#39;mouse&#39;, mouseMsg);</span>
+	<span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;oneSound&#39;</span><span class="p">,</span> <span class="nx">simpleSound</span><span class="p">);</span>
+	
+	<span class="kd">function</span> <span class="nx">simpleSound</span><span class="p">(</span><span class="nx">myName</span><span class="p">){</span>
+		
+		<span class="nx">socket</span><span class="p">.</span><span class="nx">broadcast</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;oneSound&#39;</span><span class="p">,</span> <span class="nx">myName</span><span class="p">);</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;simpleSound ran&quot;</span><span class="p">);</span>
+	<span class="p">}</span>
+	
+
+
+<span class="p">}</span></code></pre></div>
+
+<p>The sketch_sound_new.js file controls the recording, playback and looping.  We were able to run 2 instances of the same sketch on a local network and have them communicate via socket.io</p>
+
+<p>sketch_sound_new.js:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">oscs</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">let</span> <span class="nx">mic</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">recorder</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">loopSound</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">loops</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">let</span> <span class="nx">serverSound</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">loopCounter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">soundBlob</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">myName</span><span class="p">;</span> <span class="c1">// used for naming soundfiles on server</span>
+<span class="kd">let</span> <span class="nx">startName</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// starting soundfile name</span>
+
+<span class="kd">let</span> <span class="nx">state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// state of recording mic sample</span>
+
+<span class="kd">let</span> <span class="nx">doorSound</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">beatTrack</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">piano</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">sax</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">notes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">1.125</span><span class="p">,</span> <span class="mf">1.25</span><span class="p">,</span> <span class="mf">1.334</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.667</span><span class="p">,</span> <span class="mf">1.875</span><span class="p">,</span> <span class="mi">2</span><span class="p">];</span>
+
+<span class="kd">let</span> <span class="nx">socket</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">rectColor</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">loopText</span> <span class="o">=</span> <span class="s1">&#39;Press L to record loop sample from mic.&#39;</span><span class="p">;</span>
+
+
+<span class="kd">let</span> <span class="nx">formdata</span><span class="p">;</span> <span class="c1">//create a from to of data to upload to the server</span>
+
+<span class="kd">function</span> <span class="nx">preload</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">//  doorSound = loadSound(&#39;doorchime.mp3&#39;);</span>
+  <span class="nx">beatTrack</span> <span class="o">=</span> <span class="nx">loadSound</span><span class="p">(</span><span class="s1">&#39;drums.wav&#39;</span><span class="p">);</span>
+  <span class="nx">piano</span> <span class="o">=</span> <span class="nx">loadSound</span><span class="p">(</span><span class="s1">&#39;piano3.wav&#39;</span><span class="p">);</span>
+  <span class="nx">sax</span> <span class="o">=</span> <span class="nx">loadSound</span><span class="p">(</span><span class="s1">&#39;sax.wav&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+
+<span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">400</span><span class="p">);</span>
+
+  <span class="c1">// set up connection to local host server</span>
+  <span class="c1">//socket = io.connect(&#39;http://10.18.196.9:3000/&#39;); // need to up date IP to share with another user on same network - or localhost:3000</span>
+   <span class="nx">socket</span> <span class="o">=</span> <span class="nx">io</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">&#39;localhost:3000/&#39;</span><span class="p">);</span>  <span class="c1">// need to up date IP to share with another user on same network -  - or localhost:3000</span>
+  <span class="c1">//socket = io.connect(&#39;http://192.168.86.245:3000&#39;); //jakes home network IP</span>
+  
+  <span class="c1">// set up receiver from local host server</span>
+  <span class="c1">//socket.on(&#39;mouse&#39;, newDrawing);</span>
+  <span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;oneSound&#39;</span><span class="p">,</span> <span class="nx">instanceSound</span><span class="p">);</span>
+
+
+  <span class="c1">// Set up mic</span>
+  <span class="nx">mic</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">p5</span><span class="p">.</span><span class="nx">AudioIn</span><span class="p">();</span>
+  <span class="c1">// Set up recorder</span>
+  <span class="nx">recorder</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">p5</span><span class="p">.</span><span class="nx">SoundRecorder</span><span class="p">();</span>
+  <span class="c1">// Connect mic to recorder</span>
+  <span class="nx">recorder</span><span class="p">.</span><span class="nx">setInput</span><span class="p">(</span><span class="nx">mic</span><span class="p">);</span>
+  <span class="c1">// Turn on mic</span>
+  <span class="nx">mic</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span>
+
+<span class="p">}</span>
+
+<span class="c1">//FUNCTIONS FOR CLIENT INSTANCES TO RUN</span>
+
+<span class="kd">function</span> <span class="nx">instanceSound</span><span class="p">(</span><span class="nx">myName</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">//play sound here when oneSound broadcast is received</span>
+  <span class="nx">sax</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;new loop received&quot;</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">serverSound</span><span class="p">);</span>
+  <span class="nx">loops</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">loadSound</span><span class="p">(</span><span class="s1">&#39;uploads/&#39;</span> <span class="o">+</span> <span class="nx">myName</span> <span class="o">+</span> <span class="s1">&#39;.mp3&#39;</span><span class="p">));</span>
+
+
+<span class="p">}</span>
+
+<span class="c1">//END FUNCTIONS FOR CLIENT INSTANCES TO RUN</span>
+
+
+
+<span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">background</span><span class="p">(</span><span class="mi">220</span><span class="p">);</span>
+ 
+  <span class="c1">// Display instructions</span>
+  <span class="nx">textAlign</span><span class="p">(</span><span class="nx">CENTER</span><span class="p">,</span> <span class="nx">CENTER</span><span class="p">);</span>
+  <span class="nx">fill</span><span class="p">(</span><span class="nx">rectColor</span><span class="p">);</span>
+  <span class="nx">rectMode</span><span class="p">(</span><span class="nx">CENTER</span><span class="p">);</span>
+  <span class="nx">rect</span><span class="p">(</span><span class="nx">width</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+  <span class="nx">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+  <span class="kd">let</span> <span class="nx">ins</span> <span class="o">=</span> <span class="p">[</span><span class="nx">loopText</span><span class="p">,</span> <span class="s1">&#39;Press Z to stop and remove last loop sample&#39;</span><span class="p">,</span>  <span class="s1">&#39;Press B to start or pause the beat&#39;</span><span class="p">,</span> <span class="s1">&#39;Press P to play or stop piano&#39;</span> <span class="p">,</span><span class="s1">&#39;Press S to send loop &amp; play sax&#39;</span><span class="p">,</span><span class="s1">&#39;Press O to change sample rate&#39;</span><span class="p">,</span> <span class="s1">&#39;Press D to add delay to sample&#39;</span><span class="p">,</span> <span class="s1">&#39;Press R to add reverb to sample&#39;</span><span class="p">];</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">ins</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">textFont</span><span class="p">(</span><span class="s1">&#39;Verdana&#39;</span><span class="p">);</span>
+    <span class="nx">text</span><span class="p">(</span><span class="nx">ins</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">30</span> <span class="o">+</span> <span class="mi">70</span><span class="p">)</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+
+
+
+<span class="kd">function</span> <span class="nx">keyPressed</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">//fix Failed to execute &#39;createBuffer&#39; on &#39;BaseAudioContext error	</span>
+  <span class="nx">getAudioContext</span><span class="p">().</span><span class="nx">resume</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">key</span> <span class="o">===</span> <span class="s1">&#39;p&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// let f = random(notes);</span>
+    <span class="kd">let</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">notes</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+    <span class="nx">piano</span><span class="p">.</span><span class="nx">rate</span><span class="p">(</span><span class="nx">f</span><span class="p">);</span>
+    <span class="c1">// piano.loop();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">piano</span><span class="p">.</span><span class="nx">isPlaying</span><span class="p">())</span> <span class="p">{</span>
+      <span class="nx">piano</span><span class="p">.</span><span class="nx">stop</span><span class="p">();</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">piano</span><span class="p">.</span><span class="nx">loop</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;p pressed - start piano&#39;</span><span class="p">);</span>
+
+
+
+
+  <span class="p">}</span>
+
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">key</span> <span class="o">===</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// change rate of last mic sample</span>
+    <span class="kd">let</span> <span class="nx">speed</span> <span class="o">=</span> <span class="nx">map</span><span class="p">(</span><span class="nx">mouseY</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="nx">height</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="nx">speed</span> <span class="o">=</span> <span class="nx">constrain</span><span class="p">(</span><span class="nx">speed</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+    <span class="c1">// let oscSample = loops[loopCounter];</span>
+    <span class="nx">serverSound</span><span class="p">.</span><span class="nx">rate</span><span class="p">(</span><span class="nx">speed</span><span class="p">);</span>
+
+  <span class="p">}</span>
+  
+  <span class="k">if</span> <span class="p">(</span><span class="nx">key</span> <span class="o">===</span> <span class="s1">&#39;d&#39;</span><span class="p">){</span>
+  	 <span class="nx">delay</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">p5</span><span class="p">.</span><span class="nx">Delay</span><span class="p">();</span>
+  	 <span class="nx">serverSound</span><span class="p">.</span><span class="nx">setVolume</span><span class="p">(</span><span class="mf">0.1</span><span class="p">);</span>
+  	 <span class="nx">delay</span><span class="p">.</span><span class="nx">process</span><span class="p">(</span><span class="nx">serverSound</span><span class="p">,</span> <span class="p">.</span><span class="mi">12</span><span class="p">,</span> <span class="p">.</span><span class="mi">7</span><span class="p">,</span> <span class="mi">2300</span><span class="p">);</span>
+  <span class="p">}</span>
+  
+  <span class="k">if</span> <span class="p">(</span><span class="nx">key</span> <span class="o">===</span> <span class="s1">&#39;r&#39;</span><span class="p">){</span>
+  	 <span class="nx">reverb</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">p5</span><span class="p">.</span><span class="nx">Reverb</span><span class="p">();</span>
+  	 <span class="nx">reverb</span><span class="p">.</span><span class="nx">process</span><span class="p">(</span><span class="nx">serverSound</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+  	 
+  <span class="p">}</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">key</span> <span class="o">===</span> <span class="s1">&#39;l&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;l pressed&quot;</span><span class="p">);</span>
+    <span class="c1">// Increment the state on every keypress</span>
+    <span class="nx">state</span><span class="o">++</span><span class="p">;</span>
+    <span class="c1">// There are only 3 states</span>
+    <span class="nx">state</span> <span class="o">%=</span> <span class="mi">3</span><span class="p">;</span>
+
+    <span class="c1">// Record the sample in state 1</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">state</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">loopSound</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">p5</span><span class="p">.</span><span class="nx">SoundFile</span><span class="p">();</span>
+      <span class="nx">recorder</span><span class="p">.</span><span class="nx">record</span><span class="p">(</span><span class="nx">loopSound</span><span class="p">);</span>
+      <span class="nx">loopText</span> <span class="o">=</span> <span class="s1">&#39;Press L to stop recording loop sample&#39;</span><span class="p">;</span>
+      <span class="nx">rectColor</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span><span class="p">;</span>
+
+      <span class="c1">// Stop recording in state 2</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">state</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">recorder</span><span class="p">.</span><span class="nx">stop</span><span class="p">();</span>
+      <span class="nx">loopText</span> <span class="o">=</span> <span class="s1">&#39;Press L to play recorded loop sample&#39;</span><span class="p">;</span>
+      <span class="nx">rectColor</span> <span class="o">=</span> <span class="s1">&#39;gray&#39;</span><span class="p">;</span>
+
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">loopSound</span><span class="p">);</span>
+      <span class="nx">soundBlob</span> <span class="o">=</span> <span class="nx">loopSound</span><span class="p">.</span><span class="nx">getBlob</span><span class="p">();</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">soundBlob</span><span class="p">);</span>
+
+
+      <span class="c1">// Loop the sample in state 3</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">loopSound</span><span class="p">.</span><span class="nx">loop</span><span class="p">();</span>
+      <span class="nx">loopSound</span><span class="p">.</span><span class="nx">setVolume</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+      <span class="nx">loopText</span> <span class="o">=</span> <span class="s1">&#39;Press L key to record loop sample&#39;</span><span class="p">;</span>
+      <span class="nx">rectColor</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span><span class="p">;</span>
+
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">key</span> <span class="o">===</span> <span class="s1">&#39;z&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;z pressed - stop or replay loop&#39;</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">lastLoop</span> <span class="o">=</span> <span class="nx">loopCounter</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="nx">loops</span><span class="p">[</span><span class="nx">lastLoop</span><span class="p">].</span><span class="nx">stop</span><span class="p">();</span>
+    <span class="nx">loops</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+    <span class="nx">loopCounter</span><span class="o">--</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;stopped loop&#39;</span> <span class="o">+</span> <span class="nx">lastLoop</span><span class="p">);</span>
+  <span class="p">}</span>
+
+
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">key</span> <span class="o">===</span> <span class="s1">&#39;n&#39;</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;n pressed - play new loop&#39;</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">loops</span><span class="p">);</span>
+    <span class="nx">serverSound</span> <span class="o">=</span> <span class="nx">loops</span><span class="p">[</span><span class="nx">loopCounter</span><span class="p">];</span>
+    <span class="nx">serverSound</span><span class="p">.</span><span class="nx">loop</span><span class="p">();</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;I&#39;m playing loops &quot;</span> <span class="o">+</span> <span class="nx">loopCounter</span><span class="p">)</span>
+    <span class="nx">serverSound</span><span class="p">.</span><span class="nx">setVolume</span><span class="p">(</span><span class="mf">0.15</span><span class="p">);</span>
+    <span class="nx">loopCounter</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
+
+
+  <span class="c1">// start beat track</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">key</span> <span class="o">===</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">beatTrack</span><span class="p">.</span><span class="nx">isPlaying</span><span class="p">())</span> <span class="p">{</span>
+      <span class="nx">beatTrack</span><span class="p">.</span><span class="nx">stop</span><span class="p">();</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">beatTrack</span><span class="p">.</span><span class="nx">loop</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;b pressed - start beat&#39;</span><span class="p">);</span>
+    <span class="nx">beatTrack</span><span class="p">.</span><span class="nx">setVolume</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="c1">// stop beat track</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">key</span> <span class="o">===</span> <span class="s1">&#39;x&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;x pressed - stop beat&#39;</span><span class="p">);</span>
+    <span class="nx">beatTrack</span><span class="p">.</span><span class="nx">stop</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="c1">// send loop</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">key</span> <span class="o">===</span> <span class="s1">&#39;s&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;s pressed - send loop&#39;</span><span class="p">);</span>
+    <span class="nx">sendSoundBlob</span><span class="p">();</span>
+    <span class="nx">socket</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;oneSound&#39;</span><span class="p">,</span> <span class="nx">myName</span><span class="p">);</span> <span class="c1">// name is important </span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;sent loop&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// prevent default</span>
+<span class="p">}</span>
+
+
+<span class="kd">function</span> <span class="nx">sendSoundBlob</span><span class="p">()</span> <span class="p">{</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">startName</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">myName</span> <span class="o">=</span> <span class="nx">startName</span><span class="p">;</span>
+
+  <span class="p">}</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;startName &quot;</span> <span class="o">+</span> <span class="nx">startName</span><span class="p">);</span>
+  <span class="nx">myName</span> <span class="o">=</span> <span class="nx">startName</span><span class="p">;</span>
+
+
+  <span class="c1">//need to create new formdata object everytime</span>
+  <span class="nx">formdata</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FormData</span><span class="p">();</span> <span class="c1">//create a form of data to upload to the server</span>
+
+  <span class="nx">formdata</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;soundBlob&#39;</span><span class="p">,</span> <span class="nx">soundBlob</span><span class="p">,</span> <span class="nx">myName</span> <span class="o">+</span> <span class="s1">&#39;.mp3&#39;</span><span class="p">);</span> <span class="c1">// append the sound blob and the name of the file. third argument will show up on the server as req.file.originalname</span>
+
+  <span class="c1">// Now we can send the blob to a server...</span>
+  <span class="kd">var</span> <span class="nx">serverUrl</span> <span class="o">=</span> <span class="s1">&#39;/upload&#39;</span><span class="p">;</span> <span class="c1">//we&#39;ve made a POST endpoint on the server at /upload</span>
+  <span class="c1">//build a HTTP POST request</span>
+  <span class="kd">var</span> <span class="nx">httpRequestOptions</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span>
+    <span class="nx">body</span><span class="o">:</span> <span class="nx">formdata</span><span class="p">,</span> <span class="c1">// with our form data packaged above</span>
+    <span class="nx">headers</span><span class="o">:</span> <span class="k">new</span> <span class="nx">Headers</span><span class="p">({</span>
+      <span class="s1">&#39;enctype&#39;</span><span class="o">:</span> <span class="s1">&#39;multipart/form-data&#39;</span> <span class="c1">// the enctype is important to work with multer on the server</span>
+    <span class="p">})</span>
+  <span class="p">};</span>
+
+
+  <span class="c1">// console.log(httpRequestOptions);</span>
+  <span class="c1">// console.log(formdata);</span>
+
+
+  <span class="c1">// use p5 to make the POST request at our URL and with our options</span>
+  <span class="nx">httpDo</span><span class="p">(</span>
+    <span class="nx">serverUrl</span><span class="p">,</span>
+    <span class="nx">httpRequestOptions</span><span class="p">,</span>
+    <span class="p">(</span><span class="nx">successStatusCode</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">//if we were successful...</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;uploaded recording successfully: &quot;</span> <span class="o">+</span> <span class="nx">successStatusCode</span><span class="p">)</span>
+    <span class="p">},</span>
+    <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">)</span>
+
+  <span class="nx">startName</span><span class="o">++</span><span class="p">;</span>
+
+<span class="p">}</span></code></pre></div>
+
+<p>Overall I had a lot of fun with this assignment.  If had it to do over I would add a few more features and a way of manipulating the tracks individually instead of only the last one.</p>
+
+<div class="responsive_iframe">
+<iframe src="https://www.youtube.com/embed/CQ87knvD99w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+
+  
+  <div class="post-categories">
+  
+    
+  
+  
+  categories: <a href="/blog/categories/#icm">icm</a>
+  
+  
+</div>
+  
+  
+  
+    <!-- Disqus comments section goes here (if comments are enabled) -->
+ 
+     
+ <div class="comments">
+ <div id="disqus_thread"></div>
+     
+ <script type="text/javascript">
+     
+ /* * * STOP! * * */
+ /* You shouldn't need to edit ANYTHING below to get this working! */
+ /* Instead, edit the key `disqus.shortname` in _config.yml */
+     
+ var disqus_config = function (){
+ this.page.url = 'https://jakesherwood.com/blog//icm/p5js-sound-collaboration/';
+ this.page.identifier = 'https://jakesherwood.com/blog//icm/p5js-sound-collaboration/';
+ };
+     
+ (function() {
+ var d = document, s = d.createElement('script');
+ s.type = 'text/javascript'; s.async = true;
+ s.src = 'https://jakesherwood-com.disqus.com/embed.js';
+ s.setAttribute('data-timestamp', +new Date());
+ (d.head || d.body).appendChild(s);
+ })();
+    
+ </script>
+ <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+ </div>
+     
+ 
+  
+
+<form style="border-top:1px solid #ccc;padding:3px;text-align:center; margin-top:75px" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=JakeSherwoodBlog', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>join me on this crazy ride. enter your email:</p><p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="JakeSherwoodBlog" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /></form>	
+
+  </div>
+</section>
+
+
+<section class="contact bg-color" data-color="green">
+  <div class="wrap">
+    <h4><span class="l1"><span><span class="maily">contact [at] jakesherwood [dot] com</span></span></span></h4>
+    <p class="l3"><span>contact me if you'd like to work together</span></p>
+
+  </div>
+</section>
+</main>
+
+<!--/contact-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+	<script>
+	  var slideout = new Slideout({
+		'panel': document.getElementById('panel'),
+		'menu': document.getElementById('menu'),
+		'padding': 256,
+		'tolerance': 70
+	  });
+
+	  // Toggle button
+	  document.querySelector('.toggle-button').addEventListener('click', function() {
+		slideout.toggle();
+	  });
+	</script>
+
+ <!-- CORE BOOTSTRAP LIBRARY -->
+ <script src="https://jakesherwood.com/js/bootstrap.min.js"></script>
+ <!-- <script src="js/responsiveslides.min.js"></script>-->
+ <script src="https://jakesherwood.com/js/jquery.fancybox.min.js"></script>
+<!--
+<script src="js/all_full.js" type="77b00216ad37fa15f87e1808-text/javascript"></script>
+
+-->
+
+<script type="text/javascript">
+//	console.log("loaded from index");
+
+
+	function revealNoreveal() {
+   		 if ($(window).width() < 814) {
+			 $('.reveal').attr('class', 'noReveal');
+			 //console.log("mobile size");
+		 } else {
+			 $('.noReveal').attr('class', 'reveal');
+			// console.log("deslktop size");
+		 }
+
+	}
+
+	$(document).ready(function() {
+//	console.log("i ran");
+	$("body").removeClass("preload");
+    var $animation_elements = $('.masthead, .og_sec, .owl-bios .mf, .owl-bios .owl-pics, .owl-bios .ac, .brand, .industry, .contact');
+    var $mobile_elements = $('.masthead, .contact');
+
+
+		// var $animation_elements = $('.sections, .illustration , .sections .design, .sections .fineart, .sections .sk8 .masthead, .owl-pics, .owl-bios .mf, .owl-bios .owl-pics, .owl-bios .ac, .brand, .industry, .contact');
+
+	var $window = $(window);
+
+
+	function check_if_in_view() {
+        var window_height = $window.height();
+        var window_top_position = $window.scrollTop();
+        var window_bottom_position = (window_top_position + window_height);
+
+		 if ($(window).width() > 814){
+		$.each($animation_elements, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+                $element.addClass('in-view');
+            } else {
+                $element.removeClass('in-view');
+            }
+			//console.log("desktop size - in view");
+        });
+		} else {
+			$.each($mobile_elements, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+                $element.addClass('in-view');
+            } else {
+                $element.removeClass('in-view');
+            }
+        });
+			//console.log("mobile size - inview");
+		}
+
+
+    }
+
+	$window.on('load', check_if_in_view);
+
+    //$window.on('scroll resize', check_if_in_view);
+    //$window.trigger('scroll');
+    $(".maily").each(function() {
+        var ats,
+            dots,
+            address,
+            i;
+        ats = [' at ', ' (at) ', ' [at] '];
+        dots = [' dot ', ' (dot) ', ' [dot] '];
+        address = $(this).html();
+        for (i = 0; i < ats.length; i++) {
+            address = address.replace(ats[i], '@');
+        }
+        for (i = 0; i < dots.length; i++) {
+            address = address.replace(dots[i], '.');
+        }
+        $(this).html('<a href="mailto:' + address + '">' + address + '</a>');
+    });
+
+	function maily_in_view(){
+		if ($('.contact').hasClass('in-view')){
+			$('.l1').css('transform','none');
+		}else {
+			//console.log('maily not in-view');
+		}
+	}
+
+
+	$(window).resize(function(){
+			//ordbtnResize();
+			revealNoreveal();
+			maily_in_view();
+			//hsbTextboxResize();
+
+		});
+
+	$(window).scroll(function(){
+		maily_in_view();
+	});
+
+	maily_in_view()
+	revealNoreveal();
+
+});
+
+	</script>
+
+</body>
+
+</html>

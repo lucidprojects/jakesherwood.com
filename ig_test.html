@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	
+<style type="text/css">
+	
+.Embed {
+    display: block;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	max-width: 611px;
+    margin-left: 35px;
+}
+}
+
+
+.Header {
+    height: 54px;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 10px;
+   position: relative;
+    z-index: 100;
+    background-color: #fff;
+	
+}
+
+.AvatarContainer {
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.avatar_img{
+    width: 50px;
+}	
+	
+.AvatarContainer, .Header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.HeaderText {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+
+.EmbedFrame{
+   /* padding-bottom: 75%;*/
+	position: relative;
+    margin-top: -85px;
+}
+
+.EmbeddedMedia {
+    /*background-color: #fafafa;*/
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+	height:450px;
+}
+
+.EmbeddedMediaImage{
+	margin-top: 85px;
+}	
+
+.EmbedVideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.Feedback {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 8px 10px;
+   margin-top: 555px;
+}
+
+.Feedback, .Feedback a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.mylikes{
+    position: relative;
+    top: -30px;
+    left: 42px;
+}
+	
+	.mycomments{
+		position: relative;
+		left:-48px;
+	}
+
+
+
+.embedSpriteHeartOpen, .embedSpriteHeartOpenRed {
+    background-position: -225px -53px;
+}
+.embedSpriteGlyph, .embedSpriteHeartOpen, .embedSpriteHeartOpenRed {
+    background-repeat: no-repeat;
+    background-position: -277px -53px;
+    height: 24px;
+    width: 24px;
+}
+
+.SocialProof a {
+    font-weight: 600;
+}
+
+.Embed a {
+    color: #262626;
+}
+a, a:visited {
+    color: #003569;
+    text-decoration: none;
+}
+
+.Caption {
+    display: block;
+    line-height: 18px;
+    padding: 0 10px 10px;
+}
+
+.Footer {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid #eee;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 44px;
+    padding: 0 10px;
+}
+
+a.Timestamp {
+    color: #999;
+    font-size: 70%;
+    text-transform: uppercase;
+}
+
+@media not all, (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+
+.embedSpriteHeartOpen, .embedSpriteHeartOpenRed {
+    background-size: 172px 160px;
+    background-position: -136px -87px;
+}
+
+.embedSpriteComment, .embedSpriteGlyph, .embedSpriteHeartOpen, .embedSpriteHeartOpenRed, .embedSpritePlayButton, .embedSpriteSaveOpen, .embedSpriteShare, .embedSpriteStoryRing, .embedSpriteVerifiedBadgeSmall {
+    background-image: url(https://www.instagram.com/static/bundles/base/sprite_embed_2x.png/031e3f72ab64.png);
+}
+
+.embedSpriteHeartOpenRed {
+    background-position: 0 -136px;
+}
+.embedSpriteHeartOpen, .embedSpriteHeartOpenRed {
+    background-size: 172px 160px;
+    background-position: -136px -87px;
+}
+
+}
+</style>	
+</head>
+
+<body>
+	
+	
+	<div class="Embed">
+  
+    <div class="Header">
+		<div class="AvatarContainer">
+          <a class="Avatar" href="#" onClick="return false" target="_blank">
+            <img src="images/igavatar.png" class="avatar_img" alt="dezshredder">
+          </a>
+		</div>
+		<div class="HeaderText">
+          <a class="Username" href="https://www.instagram.com/dezshredder/?utm_source=ig_embed" target="_blank">
+            <span class="UsernameText">dezshredder</span>
+          </a>
+        </div>
+    </div>
+
+    <div class="Content EmbedFrame">
+      <a class="EmbeddedMedia" href="https://www.instagram.com/p/BnrH28FF7wy/?utm_source=ig_embed"  target="_blank">
+        <img class="EmbeddedMediaImage" src="https://scontent-lax3-2.cdninstagram.com/vp/aef6f1ddb6ee5d72452d986c37e2eceb/5BAA3252/t51.2885-15/e15/40206668_228862324647961_5515912188505103117_n.jpg" alt=""></a>
+       
+	</div>
+
+
+    <div class="Feedback">
+      <a class="Likes" href="https://www.instagram.com/p/BnrH28FF7wy/?utm_source=ig_embed" target="_blank">
+        <span class="LikeSprite embedSpriteHeartOpen"></span>
+      </a>
+      
+    </div>
+    <div class="SocialProof">
+      <a href="https://www.instagram.com/p/BnrH28FF7wy/?utm_source=ig_embed" target="_blank" class="mylikes">
+        30 likes
+      </a>
+      
+      <a href="https://www.instagram.com/p/BnrH28FF7wy/?utm_source=ig_embed" target="_blank" class="mycomments">
+        4 comments
+      </a>
+      
+    </div>
+    
+      <div class="Caption">
+        <a class="CaptionUsername" href="https://www.instagram.com/dezshredder/?utm_source=ig_embed" data-ios-link="user?username=dezshredder&amp;utm_source=ig_embed" data-log-event="captionProfileClick" target="_blank">dezshredder</a>Throwback to real <a href="/explore/tags/hubbas/" data-ios-link="tag?name=hubbas" data-log-event="hashtagClick" target="_blank">#hubbas</a> in the <a href="/explore/tags/city/" data-ios-link="tag?name=city" data-log-event="hashtagClick" target="_blank">#city</a> <a href="/explore/tags/skateboarding/" data-ios-link="tag?name=skateboarding" data-log-event="hashtagClick" target="_blank">#skateboarding</a> <a href="/explore/tags/nyc/" data-ios-link="tag?name=nyc" data-log-event="hashtagClick" target="_blank">#nyc</a> <a href="/explore/tags/tbt/" data-ios-link="tag?name=tbt" data-log-event="hashtagClick" target="_blank">#tbt</a> <a href="/explore/tags/circa2005/" data-ios-link="tag?name=circa2005" data-log-event="hashtagClick" target="_blank">#circa2005</a>
+        
+      </div>
+    
+    <div class="Footer">
+      
+        <a class="Timestamp" href="https://www.instagram.com/p/BnrH28FF7wy/?utm_source=ig_embed" target="_blank">1 week ago</a>
+ 
+    </div>
+  
+</div>
+	
+	
+</body>
+</html>

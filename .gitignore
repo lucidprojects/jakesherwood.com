@@ -1,0 +1,10 @@
+#ignore blog assests directory
+blog/assets/
+
+
+#ignore movie files
+.mp4
+.webm
+.mov
+
+
