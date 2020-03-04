@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://jakesherwood.com/blog/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="2.5.3">Jekyll</generator><link href="https://jakesherwood.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jakesherwood.com/blog/" rel="alternate" type="text/html" /><updated>2020-03-02T23:32:12-05:00</updated><id>https://jakesherwood.com/blog/</id><title type="html">jakesherwood.com</title><author><name>jake sherwood</name></author><entry><title type="html">Comics The 40 Yr Old Skater Thumbs</title><link href="https://jakesherwood.com/blog/comics/comics-the-40-yr-old-skater-thumbs/" rel="alternate" type="text/html" title="Comics The 40 Yr Old Skater Thumbs" /><published>2020-03-02T00:00:00-05:00</published><updated>2020-03-02T00:00:00-05:00</updated><id>https://jakesherwood.com/blog/comics/comics-the-40-yr-old-skater-thumbs</id><content type="html" xml:base="https://jakesherwood.com/blog/comics/comics-the-40-yr-old-skater-thumbs/">&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/40yearoldskater_thumb_hdr.jpg&quot; class=&quot;post_img&quot; alt=&quot;Comics - The 40yr Old Skater&quot; /&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://jakesherwood.com/blog/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="2.5.3">Jekyll</generator><link href="https://jakesherwood.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jakesherwood.com/blog/" rel="alternate" type="text/html" /><updated>2020-03-04T00:07:21-05:00</updated><id>https://jakesherwood.com/blog/</id><title type="html">jakesherwood.com</title><author><name>jake sherwood</name></author><entry><title type="html">Hid Progress Report One</title><link href="https://jakesherwood.com/blog/tangibleinteractions/hid-progress-report-one/" rel="alternate" type="text/html" title="Hid Progress Report One" /><published>2020-03-03T00:00:00-05:00</published><updated>2020-03-03T00:00:00-05:00</updated><id>https://jakesherwood.com/blog/tangibleinteractions/hid-progress-report-one</id><content type="html" xml:base="https://jakesherwood.com/blog/tangibleinteractions/hid-progress-report-one/">&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/hid_progress_update1_hdr.jpg&quot; class=&quot;post_img&quot; alt=&quot;HID Progress 1&quot; /&gt;
+&lt;span class=&quot;imgsub&quot;&gt;HID Progress 1&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;HID Progress 1&lt;/strong&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;HID (Human Interface Device.) Progress report #1.&lt;/p&gt;
+
+&lt;p&gt;Merged mouse and keyboard functions and added haptics as well as threshold calculations for whip clicks.&lt;/p&gt;
+
+&lt;p&gt;Also explored Kalman filters but didn’t see enough of a change to use.  See graphs below in the gallery.&lt;/p&gt;
+
+&lt;p&gt;Built a couple quick prototypes for the wrist device.&lt;/p&gt;
+
+&lt;p&gt;A super low fidelity rubber band rig.&lt;br /&gt;
+&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/hid_progress_rubberband.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;rubber band rig&quot; /&gt;
+&lt;br /&gt;&lt;span class=&quot;imgsub&quot;&gt;rubber band rig&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Ace band rig.&lt;br /&gt;
+&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/hid_progress_aceband.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;Ace band rig&quot; /&gt;
+&lt;br /&gt;&lt;span class=&quot;imgsub&quot;&gt;Ace band rig&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are a couple videos of it starting to come together and one early one of what NOT TO DO.&lt;/p&gt;
+
+&lt;p&gt;Combining mouse and keyboard.&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;responsive_iframe&quot;&gt;
+&lt;iframe src=&quot;https://www.youtube.com/embed/n3o0620qMkM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+FIrst on wrist test&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;responsive_iframe&quot;&gt;
+&lt;iframe src=&quot;https://www.youtube.com/embed/F2TM3ILhfOs&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;what not to do - mouse gone mad.&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;responsive_iframe&quot;&gt;
+&lt;iframe src=&quot;https://www.youtube.com/embed/B5eXY8nmMTQ&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;strong&gt;To Do&lt;/strong&gt;&lt;br /&gt;
+1) Clean up code&lt;br /&gt;
+2) Smooth interactions - it’s sometimes hard to get features / functions to respond quickly&lt;br /&gt;
+3) Add sleep button - still might use FSR&lt;br /&gt;
+4) If sleep button added update schematics&lt;br /&gt;
+5) Finalize wrist band / enclosure design&lt;br /&gt;
+6) Begin fabbing &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;User Feedback&lt;/strong&gt;&lt;br /&gt;
+1) Raising arm for better gestures (e.g. down) gets tired &lt;br /&gt;
+2) Takes out of typing zone too much &lt;br /&gt;
+3) Bit of a learning curve, but fun &lt;br /&gt;&lt;/p&gt;
+
+&lt;style&gt;
+    .image-gallery {overflow: auto; margin-left: -1%!important;}
+    .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}
+    .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
+    .image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
+    .image-gallery li a img {width: 100%; display: block;}
+&lt;/style&gt;
+
+&lt;ul class=&quot;image-gallery&quot;&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/IMG_0536.jpg&quot; title=&quot;IMG_0536&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/IMG_0536.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;IMG_0536&quot; title=&quot;IMG_0536&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/IMG_2255.jpg&quot; title=&quot;IMG_2255&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/IMG_2255.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;IMG_2255&quot; title=&quot;IMG_2255&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/IMG_2847.jpg&quot; title=&quot;IMG_2847&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/IMG_2847.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;IMG_2847&quot; title=&quot;IMG_2847&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/IMG_4604.jpg&quot; title=&quot;IMG_4604&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/IMG_4604.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;IMG_4604&quot; title=&quot;IMG_4604&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/IMG_4806.jpg&quot; title=&quot;IMG_4806&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/IMG_4806.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;IMG_4806&quot; title=&quot;IMG_4806&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/IMG_6898.jpg&quot; title=&quot;IMG_6898&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/IMG_6898.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;IMG_6898&quot; title=&quot;IMG_6898&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/IMG_6949.jpg&quot; title=&quot;IMG_6949&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/IMG_6949.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;IMG_6949&quot; title=&quot;IMG_6949&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/IMG_8315.jpg&quot; title=&quot;IMG_8315&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/IMG_8315.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;IMG_8315&quot; title=&quot;IMG_8315&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/IMG_8459.jpg&quot; title=&quot;IMG_8459&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/IMG_8459.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;IMG_8459&quot; title=&quot;IMG_8459&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/IMG_9684.jpg&quot; title=&quot;IMG_9684&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/IMG_9684.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;IMG_9684&quot; title=&quot;IMG_9684&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/gesture_hid_breadboard_bb.jpg&quot; title=&quot;gesture_hid_breadboard_bb&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/gesture_hid_breadboard_bb.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;gesture_hid_breadboard_bb&quot; title=&quot;gesture_hid_breadboard_bb&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/gesture_hid_breadboard_schem.jpg&quot; title=&quot;gesture_hid_breadboard_schem&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/gesture_hid_breadboard_schem.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;gesture_hid_breadboard_schem&quot; title=&quot;gesture_hid_breadboard_schem&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/kalman_test_20200229_nofilter.jpg&quot; title=&quot;kalman_test_20200229_nofilter&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/kalman_test_20200229_nofilter.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;kalman_test_20200229_nofilter&quot; title=&quot;kalman_test_20200229_nofilter&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/hid_progress1/kalman_test_20200229_wfilter.jpg&quot; title=&quot;kalman_test_20200229_wfilter&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/hid_progress1/kalman_test_20200229_wfilter.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;kalman_test_20200229_wfilter&quot; title=&quot;kalman_test_20200229_wfilter&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://jakesherwood.com/blog/js/lightbox.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://jakesherwood.com/blog/assets/css/lightbox.css&quot; /&gt;</content><summary type="html">HID Progress 1
+
+HID Progress 1</summary></entry><entry><title type="html">Comics The 40 Yr Old Skater Thumbs</title><link href="https://jakesherwood.com/blog/comics/comics-the-40-yr-old-skater-thumbs/" rel="alternate" type="text/html" title="Comics The 40 Yr Old Skater Thumbs" /><published>2020-03-02T00:00:00-05:00</published><updated>2020-03-02T00:00:00-05:00</updated><id>https://jakesherwood.com/blog/comics/comics-the-40-yr-old-skater-thumbs</id><content type="html" xml:base="https://jakesherwood.com/blog/comics/comics-the-40-yr-old-skater-thumbs/">&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/40yearoldskater_thumb_hdr.jpg&quot; class=&quot;post_img&quot; alt=&quot;Comics - The 40yr Old Skater&quot; /&gt;
 &lt;span class=&quot;imgsub&quot;&gt;Comics - The 40yr Old Skater - Thumbs&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Comics - The 40yr Old Skater - Thumbs&lt;/strong&gt;&lt;!--more--&gt;&lt;/p&gt;
@@ -322,143 +390,4 @@ Comics - How Images and Text Can Change Things</summary></entry><entry><title ty
 &lt;img src=&quot;https://jakesherwood.com/blog/assets/images/clock_prep_sketchs.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;clock prep sketches&quot; /&gt;
 &lt;span class=&quot;imgsub&quot;&gt;clock prep sketches&lt;/span&gt;&lt;/p&gt;</content><summary type="html">clock prep - build a clock
 
-First Assignment Prep</summary></entry><entry><title type="html">Climatescape</title><link href="https://jakesherwood.com/blog/pcomp/climatescape/" rel="alternate" type="text/html" title="Climatescape" /><published>2019-12-17T00:00:00-05:00</published><updated>2019-12-17T00:00:00-05:00</updated><id>https://jakesherwood.com/blog/pcomp/climatescape</id><content type="html" xml:base="https://jakesherwood.com/blog/pcomp/climatescape/">&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape_hdr.jpg&quot; class=&quot;post_img&quot; alt=&quot;Climatescape kinetic art installation&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;Climatescape kinetic art installation&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;CLIMATESCAPE&lt;/strong&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;Climatescape is a kinetic art installation meant to raise awareness on climate change and the human effect on the climate.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape-interaction.jpg&quot; class=&quot;post_img&quot; alt=&quot;Climatescape user interaction&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;Climatescape user interaction&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Climate change is happening. Some think we’ve already gone too far.&lt;/p&gt;
-
-&lt;p&gt;We need to make a concentrated effort to about face immediately. A dramatic shift on current climate policy and swift action is no longer an option, it is mandatory. The time is now and it may be running out, if it hasn’t already.&lt;/p&gt;
-
-&lt;p&gt;ClimateScape is about bringing awareness to the human effect and how we are affecting climate change. The four soundscape sculptures represent 4 potential climate change scenarios known as Representative Concentration Pathways, or RCPs.&lt;/p&gt;
-
-&lt;p&gt;They are scenario models for forecasters to use when modeling certain climate related metrics.&lt;/p&gt;
-
-&lt;p&gt;As the sculptures are approached they engage with the viewer and create a sometimes uneasy soundscape representing one of these scenarios. Illustrating the human effect and how we are influencing these changes.&lt;/p&gt;
-
-&lt;p&gt;The sculptures also have a representative material, representing a current and / or future sector that is or will be playing a role in climate change.&lt;/p&gt;
-
-&lt;p&gt;We are the human effect and we cause the ClimateScape.&lt;/p&gt;
-
-&lt;p&gt;It is up to us to right the ship. We as artists must bring continued awareness. We as humans must act.&lt;/p&gt;
-
-&lt;p&gt;For more info visit the &lt;a href=&quot;/climatescape/&quot; target=&quot;_blank&quot;&gt;Climatescape&lt;/a&gt; microsite.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;#climatescapevid&quot; class=&quot;link&quot;&gt;Jump to video&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Final Fabrication and Winter Show&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Showing at the 2019 ITP Winter Show was a great experience.   Climatescape was well received and the feedback was great.  And nothing broke!!!&lt;/p&gt;
-
-&lt;p&gt;It wasn’t easy and took many many many hours to get there. Let’s review…&lt;/p&gt;
-
-&lt;p&gt;For further backstory please see my previous posts on this project:&lt;br /&gt;
-&lt;a href=&quot;https://jakesherwood.com/blog/pcomp/pcomp-final-concepts-and-inspiration&quot; target=&quot;_blank&quot;&gt;Initial concepts&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://jakesherwood.com/blog/pcomp/pcomp-final-concept&quot; target=&quot;_blank&quot;&gt;Progress update #1&lt;br /&gt;
-&lt;a href=&quot;https://jakesherwood.com/blog/pcomp/pcomp-final-progress&quot; target=&quot;_blank&quot;&gt;Progress update #2&lt;br /&gt;&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After the second round play testing, I decided that it would be a better interaction if the 4 sculptures initialized and spun up only as a user approached.  Instead of always spinning at a resting speed as it was programmed previously.&lt;/p&gt;
-
-&lt;p&gt;This would both provide a better user experience and also help to reduce the heat build up.&lt;/p&gt;
-
-&lt;p&gt;Updating the sketch to handle this was relatively easy.  To further handle heat issues, I also added a cool down function to stop the sculptures after 10 seconds.  The logic will stop any of the motor arrays I set it up on and make it wait 20 seconds before it can spool up again.  For the show I was just running it on the worst case (RCP 8.5) scenario. As those created the most heat when ran for long periods of time.&lt;/p&gt;
-
-&lt;p&gt;Also from the show one of the biggest issues I had, was varying clothing layers and individual body temps.  To attempt to handle this I updated my sensor thresholds to be variables I can easily set at the top of the sketch.  This allowed me to quickly change the values throughout the show.&lt;/p&gt;
-
-&lt;p&gt;It worked for the most part but the variable lighting and temperature conditions at the show still presented a challenge.  In the future I’d like to add potentiometers to be able to adjust more easily.&lt;/p&gt;
-
-&lt;p&gt;Here is the code I ended up with.  It still needs to be cleaned up a bit.
-&lt;a href=&quot;https://create.arduino.cc/editor/dezshredder/ac9449b5-cbfb-4d1b-96df-4d02f418346f/preview&quot; target=&quot;_blank&quot;&gt;climatescape code&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Getting the fabrication from 2nd user / play test to final presentation / show ready was the bigger challenge.&lt;/p&gt;
-
-&lt;p&gt;I still needed to figure out how to get everything wired up, mounted and contained in my enclosure.&lt;/p&gt;
-
-&lt;p&gt;I also needed to figure out how to make sense out of the mess I had created.&lt;/p&gt;
-
-&lt;p&gt;4 sculptures&lt;br /&gt;
-4 transistor arrays&lt;br /&gt;
-4 sensors&lt;br /&gt;
-5 power supplies&lt;br /&gt;
-&amp;amp; a whole lot of dc motors&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape_building_transitor_arrays.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;early fabrication components - only half the mess&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;early fabrication components - only half the mess&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Single transistor array to control 10 motors.  This array would let me power higher voltage motors and protect my micro controller from back current.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape_transitor_array.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;transistor array for 10 motors&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;transistor array for 10 motors&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;I also needed to created my RCP plaques for the front of my enclosures, source my representative materials and put everything together.&lt;/p&gt;
-
-&lt;p&gt;First things first I needed to paint my boxes.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape_enclosure_boxes.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;unpainted enclosure boxes&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;unpainted enclosure boxes&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Luckily the downstairs shop recently opened and I was able to go use the spray booth.  Instead of having to find a dark street corner somewhere.&lt;/p&gt;
-
-&lt;p&gt;The only downside was that I then had to wait for the boxes to dry which ended up taking almost a full day.   That delayed things a bit, but I still had plenty to do.&lt;/p&gt;
-
-&lt;p&gt;I wanted the front of the enclosures to be pretty clean so I laser cut some white acrylic and used the sharpie trick to color the etched parts.&lt;/p&gt;
-
-&lt;p&gt;I also wanted a way for the viewers to get more info on the project and learn more about the RCPs.  So I added a QR code to the acrylic.&lt;/p&gt;
-
-&lt;p&gt;It turned out really nice and the microsite is &lt;a href=&quot;https://jakesherwood.com/climatescape&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape_sharipe_trick.gif&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;sharpie trick on white acrylic&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;sharpie trick on white acrylic&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Now back to fabbing…. my boxes finally dried….&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape_enclosure_boxes_painted.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;painted enclosure boxes&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;painted enclosure boxes&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Once my boxes were painted I was able to put the support blocks in and get ready to start wiring everything up.&lt;/p&gt;
-
-&lt;p&gt;The plan was to put the majority of the wiring and components under the motor array platform.&lt;/p&gt;
-
-&lt;p&gt;This would allow me to have a nice clean project but still be able to access everything for repairs and tweaks.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape_enclosure_inside2.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;wired enclosure&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;wired enclosure&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape_enclosure_inside.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;wired enclosure close up&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;wired enclosure close up&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Wiring up the enclosures was stressful.  I basically had to unwire everything and re-wire it.  Lot’s of oh sh@t and what’s broken now moments…&lt;/p&gt;
-
-&lt;p&gt;Once we were all wired up I could see the light at the end of the tunnel starting to shimmer.&lt;/p&gt;
-
-&lt;p&gt;Even though I still had a good amount of work to do, I felt close.&lt;/p&gt;
-
-&lt;p&gt;I still needed to source the remaining representative materials as and finish making it all look pretty.&lt;/p&gt;
-
-&lt;p&gt;I also decided last minute to stain the motor array bases.  This would have been way easier if I had made this decision before I mounted and wired everything.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape_motorarray_base.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;staining motor array bases&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;staining motor array bases&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Once stained, it was really down to the finishing… but I still had to cut up my tire.  Fortunately my wife had found these small size tires on the side of the street and they were relatively easy to get into.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape_cutting_tires.gif&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;cutting tires&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;cutting tires&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;After cutting up the tire it was all down to making things pretty.  It went relatively smoothly and I had my four soundscape sculptures.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/climatescape_fullspread2.jpg&quot; class=&quot;post_img&quot; alt=&quot;Climatescape ITP winter show setup&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;Climatescape ITP winter show setup&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Climatescape Video&lt;/strong&gt;&lt;/p&gt;
-&lt;div id=&quot;climatescapevid&quot; class=&quot;responsive_iframe&quot;&gt;
-&lt;iframe width=&quot;1920&quot; height=&quot;1080&quot; src=&quot;https://www.youtube.com/embed/HhSCtEjb0eI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;</content><summary type="html">Climatescape kinetic art installation
-
-CLIMATESCAPE</summary></entry></feed>
+First Assignment Prep</summary></entry></feed>
