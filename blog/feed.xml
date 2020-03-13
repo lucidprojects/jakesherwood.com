@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://jakesherwood.com/blog/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="2.5.3">Jekyll</generator><link href="https://jakesherwood.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jakesherwood.com/blog/" rel="alternate" type="text/html" /><updated>2020-03-04T00:07:21-05:00</updated><id>https://jakesherwood.com/blog/</id><title type="html">jakesherwood.com</title><author><name>jake sherwood</name></author><entry><title type="html">Hid Progress Report One</title><link href="https://jakesherwood.com/blog/tangibleinteractions/hid-progress-report-one/" rel="alternate" type="text/html" title="Hid Progress Report One" /><published>2020-03-03T00:00:00-05:00</published><updated>2020-03-03T00:00:00-05:00</updated><id>https://jakesherwood.com/blog/tangibleinteractions/hid-progress-report-one</id><content type="html" xml:base="https://jakesherwood.com/blog/tangibleinteractions/hid-progress-report-one/">&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/hid_progress_update1_hdr.jpg&quot; class=&quot;post_img&quot; alt=&quot;HID Progress 1&quot; /&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://jakesherwood.com/blog/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="2.5.3">Jekyll</generator><link href="https://jakesherwood.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jakesherwood.com/blog/" rel="alternate" type="text/html" /><updated>2020-03-11T22:07:04-04:00</updated><id>https://jakesherwood.com/blog/</id><title type="html">jakesherwood.com</title><author><name>jake sherwood</name></author><entry><title type="html">Plant Monitor Data Viz</title><link href="https://jakesherwood.com/blog/device2database/plant-monitor-data-viz/" rel="alternate" type="text/html" title="Plant Monitor Data Viz" /><published>2020-03-10T00:00:00-04:00</published><updated>2020-03-10T00:00:00-04:00</updated><id>https://jakesherwood.com/blog/device2database/plant-monitor-data-viz</id><content type="html" xml:base="https://jakesherwood.com/blog/device2database/plant-monitor-data-viz/">&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/dtd_multi_dash_hdr.jpg&quot; class=&quot;post_img&quot; alt=&quot;Plant monitor&quot; /&gt;
+&lt;span class=&quot;imgsub&quot;&gt;Plant monitor Data &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;D2D - Plant monitor Data Viz and Node-Red&lt;/strong&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;Over the last few weeks we’ve been collecting plant data.&lt;/p&gt;
+
+&lt;p&gt;I have two monitors set up, 1 at home and 1 at school.&lt;/p&gt;
+
+&lt;p&gt;This past week we learned about Grafana and Node-Red.&lt;/p&gt;
+
+&lt;p&gt;Grafana is a really cool dashboard that you can run on a server or locally to visualize data in a database.&lt;/p&gt;
+
+&lt;p&gt;The assignment was to set up a dashboard and a few graphs based on our own monitor(s).&lt;/p&gt;
+
+&lt;p&gt;I had already installed Grafana locally and attached it to the tsitp Timescale database.  So I used that to build out my dashboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/dtd_multi_dash.jpg&quot; class=&quot;post_img&quot; alt=&quot;Plant monitor - data viz with Grafana&quot; /&gt;
+&lt;span class=&quot;imgsub&quot;&gt;Plant monitor - data viz with Grafana &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;I set up gauges for temp, humidity, &amp;amp; pressure for both of my devices.  They are showing the last not null values.&lt;/p&gt;
+
+&lt;p&gt;I have averages for illuminance, uva, &amp;amp; uvb.&lt;/p&gt;
+
+&lt;p&gt;Finally I have heat maps for my soil values.  I like seeing the change in soil readings over time. Hopefully I’ll be able to monitor them and see when and if they are watered.&lt;/p&gt;
+
+&lt;p&gt;Also just to gauge what other people are doing I have an all device temp line graph and bar graph for intervals.&lt;/p&gt;
+
+&lt;p&gt;That highlighted a funny event on 3/7…  looks like device_15 was on FIRE.  43 mil degrees ??!?!?!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/dtd_device_15_goes_nuclear.jpg&quot; class=&quot;post_img&quot; alt=&quot;device_15 goes nuclear&quot; /&gt;
+&lt;span class=&quot;imgsub&quot;&gt;device_15 goes nuclear&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;We also learned about Node-red which is a really cool node based visual programming app.&lt;/p&gt;
+
+&lt;p&gt;It allows us to configure various things with minimal code and just dragging and attaching nodes.&lt;/p&gt;
+
+&lt;p&gt;It is pretty cool and I had been wanting to do something with a node base programming tool.&lt;/p&gt;
+
+&lt;p&gt;I set up a few things.&lt;/p&gt;
+
+&lt;p&gt;1) a way to adjust my configinterval on both monitors. &lt;br /&gt;
+2) a way to send me SMS msgs just based on subscriptions to the soil mqtt channels&lt;br /&gt;
+3) a way to send an SMS alert every 6 hours if soil readings on either of my devices is over 600.  For this I added the postgres node and configured it to return soil values for my devices which I am then reading from an array and sending notices if the 600 threshold is met.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/dts_node-red-notices.jpg&quot; class=&quot;post_img&quot; alt=&quot;node-red&quot; /&gt;
+&lt;span class=&quot;imgsub&quot;&gt;node-red&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Things still to do&lt;/strong&gt;&lt;br /&gt;
+1) Get Grafana and Node-red both installed on my actual server.&lt;br /&gt;
+2) Get data feeding into my own database.&lt;/p&gt;</content><summary type="html">Plant monitor Data 
+
+D2D - Plant monitor Data Viz and Node-Red</summary></entry><entry><title type="html">Comics The 40 Yr Old Skater</title><link href="https://jakesherwood.com/blog/comics/comics-the-40-yr-old-skater/" rel="alternate" type="text/html" title="Comics The 40 Yr Old Skater" /><published>2020-03-09T00:00:00-04:00</published><updated>2020-03-09T00:00:00-04:00</updated><id>https://jakesherwood.com/blog/comics/comics-the-40-yr-old-skater</id><content type="html" xml:base="https://jakesherwood.com/blog/comics/comics-the-40-yr-old-skater/">&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/40yearoldskater_hdr.jpg&quot; class=&quot;post_img&quot; alt=&quot;Comics - The 40yr Old Skater&quot; /&gt;
+&lt;span class=&quot;imgsub&quot;&gt;Comics - The 40yr Old Skater&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Comics - The 40yr Old Skater&lt;/strong&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/40yearoldskater_full.jpg&quot; title=&quot;The 40 Year Old Skater&quot; class=&quot;lightbox-image&quot;&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/40yearoldskater_full.jpg&quot; alt=&quot;the 40 yr old skater comic&quot; class=&quot;wideImg&quot; title=&quot;the 40 yr old skater thumbs&quot; /&gt;  &lt;/a&gt;&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://jakesherwood.com/blog/js/lightbox.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://jakesherwood.com/blog/assets/css/lightbox.css&quot; /&gt;</content><summary type="html">Comics - The 40yr Old Skater
+
+Comics - The 40yr Old Skater</summary></entry><entry><title type="html">Hid Progress Report One</title><link href="https://jakesherwood.com/blog/tangibleinteractions/hid-progress-report-one/" rel="alternate" type="text/html" title="Hid Progress Report One" /><published>2020-03-03T00:00:00-05:00</published><updated>2020-03-03T00:00:00-05:00</updated><id>https://jakesherwood.com/blog/tangibleinteractions/hid-progress-report-one</id><content type="html" xml:base="https://jakesherwood.com/blog/tangibleinteractions/hid-progress-report-one/">&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/hid_progress_update1_hdr.jpg&quot; class=&quot;post_img&quot; alt=&quot;HID Progress 1&quot; /&gt;
 &lt;span class=&quot;imgsub&quot;&gt;HID Progress 1&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;HID Progress 1&lt;/strong&gt;&lt;!--more--&gt;&lt;/p&gt;
@@ -344,50 +407,4 @@ And last but not least, one of my dot matrices died right as I was finalizing my
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://jakesherwood.com/blog/assets/css/lightbox.css&quot; /&gt;</content><summary type="html">build a clock
 
-Build a clock</summary></entry><entry><title type="html">Comics Images And Text</title><link href="https://jakesherwood.com/blog/comics/comics-images-and-text/" rel="alternate" type="text/html" title="Comics Images And Text" /><published>2020-02-10T00:00:00-05:00</published><updated>2020-02-10T00:00:00-05:00</updated><id>https://jakesherwood.com/blog/comics/comics-images-and-text</id><content type="html" xml:base="https://jakesherwood.com/blog/comics/comics-images-and-text/">&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/comics_images-n-text_hdr.jpg&quot; class=&quot;post_img&quot; alt=&quot;Comics - Images and Text&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;Comics - Images and Text&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Comics - How Images and Text Can Change Things&lt;/strong&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;!---An exploration of combining different words with images in different ways.  Working with word specific, text specific, duo-specific, additive, interdependent, parallel, and montage.  But which is which? ---&gt;
-
-&lt;style&gt;
-    .image-gallery {overflow: auto; margin-left: -1%!important;}
-    .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}
-    .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
-    .image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
-    .image-gallery li a img {width: 100%; display: block;}
-&lt;/style&gt;
-
-&lt;ul class=&quot;image-gallery&quot;&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_1.jpg&quot; title=&quot;Puddles_1&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_1.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;Puddles_1&quot; title=&quot;Puddles_1&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_2.jpg&quot; title=&quot;Puddles_2&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_2.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;Puddles_2&quot; title=&quot;Puddles_2&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_3.jpg&quot; title=&quot;Puddles_3&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_3.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;Puddles_3&quot; title=&quot;Puddles_3&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_4.jpg&quot; title=&quot;Puddles_4&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_4.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;Puddles_4&quot; title=&quot;Puddles_4&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_5.jpg&quot; title=&quot;Puddles_5&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_5.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;Puddles_5&quot; title=&quot;Puddles_5&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_6.jpg&quot; title=&quot;Puddles_6&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_6.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;Puddles_6&quot; title=&quot;Puddles_6&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_7.jpg&quot; title=&quot;Puddles_7&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=jakesherwood.com/blog/assets/images/comics_imagetext_gallery/Puddles_7.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;Puddles_7&quot; title=&quot;Puddles_7&quot; /&gt;  &lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://jakesherwood.com/blog/js/lightbox.js&quot;&gt;&lt;/script&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://jakesherwood.com/blog/assets/css/lightbox.css&quot; /&gt;</content><summary type="html">Comics - Images and Text
-
-Comics - How Images and Text Can Change Things</summary></entry><entry><title type="html">Tangible Interactions</title><link href="https://jakesherwood.com/blog/tangibleinteractions/tangible-interactions/" rel="alternate" type="text/html" title="Tangible Interactions" /><published>2020-02-04T00:00:00-05:00</published><updated>2020-02-04T00:00:00-05:00</updated><id>https://jakesherwood.com/blog/tangibleinteractions/tangible-interactions</id><content type="html" xml:base="https://jakesherwood.com/blog/tangibleinteractions/tangible-interactions/">&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/clock_prep_hdr.jpg&quot; class=&quot;post_img&quot; alt=&quot;clock prep - build a clock&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;clock prep - build a clock&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;First Assignment Prep&lt;/strong&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;For Tangible Interactions, our first assignment is to build a clock.&lt;/p&gt;
-
-&lt;p&gt;Conveniently I need a clock for my bathroom so it works out well.&lt;/p&gt;
-
-&lt;p&gt;The plan is to use a dot matrix for the actual clock portion.  It will be set using 2 rotary encoders.&lt;/p&gt;
-
-&lt;p&gt;The housing will be cork with an acrylic face plate.&lt;/p&gt;
-
-&lt;p&gt;Thats the plan at least.  Let’s see if it happens…&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/clock_prep_wares.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;clock wares&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;clock wares&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/clock_prep_hello_clock.gif&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;hellow clock gif&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;hello clock gif&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;enclosure sketches&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&quot;https://jakesherwood.com/blog/assets/images/clock_prep_sketchs.jpg&quot; class=&quot;post_img_sml postimg450&quot; alt=&quot;clock prep sketches&quot; /&gt;
-&lt;span class=&quot;imgsub&quot;&gt;clock prep sketches&lt;/span&gt;&lt;/p&gt;</content><summary type="html">clock prep - build a clock
-
-First Assignment Prep</summary></entry></feed>
+Build a clock</summary></entry></feed>
